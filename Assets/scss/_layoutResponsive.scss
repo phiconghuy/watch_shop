@@ -1,0 +1,405 @@
+/** ========== RESPONSIVE FOR SCREEN 1350px OR LESS =========**/
+@media screen and (max-width: 1350px){
+	#footer .box .column .socials .link {
+		width: 45px;
+		height: 45px;
+	}
+}
+/** ========== RESPONSIVE FOR SCREEN 1200px OR LESS =========**/
+@media screen and (max-width: 1200px){
+	/** ========= HEADER =========== **/
+	.primary-menu{
+		.menu-item{
+			margin:0 0.5rem;
+			font-size:0.9rem;			
+			a{
+				padding:0;
+				svg{
+					margin-left:0;
+				}
+			}
+		}
+	}
+	.sub-menu{
+		.column{
+			.column-title{
+				font-size:1rem;
+			}
+		}
+		ul{
+			li{
+				a{
+					font-size:.8rem;
+				}
+			}
+		}
+	}
+	#right-head{
+		.icon{
+			font-size:0.9rem;
+		}
+	}
+	#box-search {
+		 #form-search{ 
+			#txt_search{
+				font-size:3.5rem;
+			}
+			#btn-search{
+				font-size:3.5rem;
+			}
+		}
+	}
+	/** ========= FOOTER =========== **/
+	#footer{
+		h3.title{
+			font-size:1.2rem;
+		}
+		.box{
+			justify-content: space-around;
+			width:90%;
+			margin:0 auto;
+			.column{
+				width:auto;
+				.title{
+					font-size:$medium-title-font-size;
+				}
+				.text{
+					font-size:$medium-text-font-size;
+				}
+				.socials{
+					.link{
+						width: 40px;
+						height: 40px;
+						line-height: 40px;
+						margin:0 .1rem;
+					}
+				}
+			}
+		}
+	}
+	#footer-categories{
+		.column{
+			.footer-category-title{
+				font-size: 1.2rem;
+			}
+			.footer-menu{
+				.menu-item{
+					.menu-link{
+						font-size:1rem;
+					}
+				}
+			}
+			address{
+				font-size:1rem;		
+			}
+			#footer-logo-wrapper{
+				.text{
+					margin-top:0.5rem;
+				}
+			}	
+		}
+	}
+}
+/** ======== RESPONSIVE FOR SCREEN 966px OR LESS ======= **/
+@media screen and (max-width: 966px){
+	/** ========= HEADER =========== **/
+	#header{
+		background-color:#0f0f0f;
+	}
+	.primary-menu{
+		position: fixed;
+		top: 0;
+		top: 0;
+		left: -250px;
+		width: 250px;
+		background-color: #0f0f0f;
+		height: 100%;
+		transition:.5s;
+		#close-menu-mobile{
+			display:block;
+			color:$color-menu-mobile-text;
+		}
+		
+		.menu-item{
+			float: none;
+			text-align: center;
+			margin:0;
+			&:last-child{
+				.sub-menu{
+					a{
+						text-transform:uppercase;
+						margin:0.5rem 0;
+					}
+				}
+			}
+			> a{
+				padding:0.9rem 0;
+				border-bottom:1px solid $color-menu-mobile-text;
+				display:block;
+				position:relative;
+				color:$color-menu-mobile-text;
+				font-size:0.8rem;
+				font-weight:700;
+				svg{
+					position:absolute;
+					right:1rem;
+				}
+			}
+
+		}
+	}
+	.sub-menu{
+		display:none;
+		.column{
+			.column-title{
+				font-size: 0.9rem;
+				margin: 1rem;		
+				color:$color-menu-mobile-text;		
+			}
+			.product-item{
+				display: flex;
+				flex-wrap: wrap;
+				
+				> a{
+					width:40%;
+				}
+				.content{
+					width:60%;
+				}
+				.title{
+					font-size:1rem;
+					a{
+						text-align: left;
+						color:$color-menu-mobile-text;
+						margin-top:.7rem;
+					}
+				}
+				.price{
+					text-align: left;
+				}
+			}
+		}
+		ul li a{
+			color:$color-menu-mobile-text;
+		}
+	}
+	.primary-menu.open{
+		left:0;	
+		overflow-y:scroll;	
+		z-index:999;
+	}
+	#right-head{
+		#open-menu-mobile{
+			display:block;
+		}
+	}
+	#box-search{
+		#form-search{
+			padding:0 1rem;
+			#txt_search,#btn-search{
+				font-size:1.5rem;
+			}
+		}
+	}
+	/** ========= FOOTER =========== **/
+	#footer{
+		h3.title{
+			font-size:1rem;
+		}
+		.box{
+			justify-content: space-around;
+			flex-wrap:wrap;
+			.column{
+				&:nth-child(1){
+					width:50%;
+				}
+				&:nth-child(2){
+					width:50%;
+				}
+				&:nth-child(3){
+					width:100%;
+					margin-top: 3rem;
+				}
+			}
+			.socials{
+				text-align: center;
+			}
+		}
+	}
+	#footer-categories{    
+		.column{
+			.footer-menu{
+				.menu-item{
+					.menu-link{
+						font-size:1rem;
+					}
+				}
+			}
+			address{
+				font-size:1rem;		
+			}
+			#footer-logo-wrapper{
+				.text{
+					margin-top:0.5rem;
+				}
+			}	
+		}
+	}
+	#bottom-footer{
+		p{
+			font-size:1rem;
+		}
+	}
+}
+/** ======== RESPONSIVE FOR SCREEN 768px OR LESS ======= **/
+@media screen and (max-width: 768px){
+	/** ======== HEADER ========**/
+	#header{
+		height:$header-height-mb;
+	}
+	#wrapper{
+		flex-direction:column;
+		align-items:center;
+		justify-content: space-around;
+	}
+	#box-search{
+		#form-search{
+			width:100%;
+			border-bottom:none;
+			padding:0 2rem 0 1rem;
+			#txt_search,#btn-search{
+				font-size:1.3rem;
+			}
+		}
+	}
+	.basket{
+		position: static;
+		.basket-wrapper{
+			width:280px;
+			right:unset;
+			left:-4rem;
+		}
+		#product-list{
+			.watch-product{
+				.image-area{
+					width:60px;
+				}
+			}
+			.product-info{
+				.product-title{
+					font-size:1rem;
+				}
+				.product-price{
+					font-size:1rem;
+					margin-top:0.5rem;
+				}
+			}
+		}
+	}
+	/** ========= FOOTER =========== **/
+	#footer{
+		.box{
+			justify-content: space-around;
+			flex-wrap:wrap;
+			.column{
+				&:nth-child(1),&:nth-child(2),&:nth-child(3){
+					width:100%;
+					margin-top:1rem;
+				}
+				h2.title,.text{
+					text-align:center;
+				}
+			}
+			.socials{
+				text-align: center;
+			}
+		}
+	}
+	#footer-categories{    
+		.column{
+			&:nth-child(1){
+				width:100%;
+			}
+			&:nth-child(2),&:nth-child(3),&:nth-child(4){
+				width:33.33%;
+			}
+			#footer-logo-wrapper{
+				display:block;
+				text-align:center;
+				img{
+					width:200px;
+				}
+				.text{
+					width:80%;
+					margin:1rem auto;
+				}
+			}
+			h3.title,.footer-menu .menu-item,address,.phone,.email{
+				text-align:center;
+			}
+		}
+	}
+	#bottom-footer{
+		p{
+			font-size:$small-text-font-size;
+		}
+	}
+}
+@media screen and (max-width: 567px){
+	#box-search{
+		#form-search{
+			padding: 0 2rem;
+			#txt_search{
+				width:100%;
+				font-size:1.2rem;
+			}
+			#btn-search{
+				font-size:1.2rem;
+			}
+		}
+		.close{
+			font-size:1.2rem;
+		}
+	}
+	#footer-categories{    
+		.column{
+			&:nth-child(1),&:nth-child(2),&:nth-child(3),&:nth-child(4){
+				width:100%!important;
+			}
+			&:nth-child(2),&:nth-child(3),&:nth-child(4){
+				margin-top:1rem;
+			}
+			.footer-menu{
+				.menu-item{
+					.menu-link{
+						font-size:$small-text-font-size;
+					}
+				}
+			}
+			address,.phone,.email{
+				font-size:$small-text-font-size;
+			}
+		}
+	}
+}
+@media screen and (max-width: 400px){
+	#footer{
+		.box{
+			 .column{
+				 #form-footer{
+					 .form-group {
+						flex-direction: column;
+					 }
+					 #email-address{
+						width: 100%;
+						box-sizing: border-box;
+					 }
+					 #submit{
+						padding: 1.1rem 0;
+						margin-top: 1rem;
+					 }
+				}
+			 }
+		}
+	}
+}

@@ -1,0 +1,56 @@
+/** This section is for the banner **/
+@keyframes zoomTextIn{
+	0%{
+		font-size:0.5rem;
+		opacity: 0;
+	}
+	100%{
+		font-size:3rem;
+		opacity:1;
+	}
+}
+@keyframes animateText{
+	0%{
+		transform:translateY(100px);
+		opacity: 0;
+	}
+	100%{
+		transform:translateY(0);
+		opacity:1;
+	}
+}
+/** This section is for the about-us **/
+@keyframes show-members{
+	0%{
+		opacity:0;
+		visibility: hidden;
+	}
+	100%{
+		opacity: 1;
+		visibility: visible;
+	}
+}
+@media screen and (max-width: 1200px){
+	@keyframes zoomTextIn{
+		100%{
+			opacity:1;
+			font-size:1.8rem;
+		}
+	}
+}
+@media screen and (max-width: 766px){
+	@keyframes zoomTextIn{
+		100%{
+			opacity:1;
+			font-size:1.2rem;
+		}
+	}
+}
+@media screen and (max-width: 567px){
+	@keyframes zoomTextIn{
+		100%{
+			opacity:1;
+			font-size:1rem;
+		}
+	}
+}

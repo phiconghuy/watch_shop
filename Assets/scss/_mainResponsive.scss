@@ -1,0 +1,500 @@
+@media screen and (max-width: 1600px){
+	/** ========== main ============**/
+	#main{
+		.title{
+			font-size:$big-title-font-size;	
+		}
+	}
+	/** =========== introduction =========== **/
+	#content-wrapper{
+		#article{
+			.title{
+				font-size:1.8rem;
+			}
+		}
+	}
+	/** ============ ABOUT - MARKET ========= **/
+	#content-left{
+		.title-1{
+			font-size: $medium-title-font-size;
+		}
+		.title-2{
+			font-size: $medium-title-font-size;
+		}
+		.text{
+			font-size: 1rem;
+			width:80%;
+		}
+		.art-btn{
+			font-size: $medium-text-font-size;
+		}
+	}
+}
+@media screen and (max-width:1350px){
+	/** ============ NEW-ARRIBVALS ============**/
+	#new-arrivals{
+		.btn-prev-desktop{	
+			left:1.5em;		
+		}
+		.btn-next-desktop{
+			right:1.5rem;
+		}
+	}
+	.product-group{
+		width:150%;
+		display:flex;
+		.product{
+			width:calc(25% - 1.6rem);
+			display:unset;
+		}
+	}
+}
+@media screen and (max-width: 1200px){
+	/** =========== Banner ============= **/
+	.carousel-item{
+		.box{
+			.bn-sub-title{
+				font-size: 1rem;
+			}
+			.promo-code{
+				font-size:1.3rem;
+			}
+		}
+	}
+	/** ========== gallery ========== **/
+	#grid {
+		.grid-item{ 
+			.content {
+				.title-1 {
+					font-size:$less-title-font-size;
+				}
+				.title-2{
+					font-size:1.4rem;
+					line-height: 2rem;
+				}
+				.btn-link{
+					font-size:$less-text-font-size;
+				}
+			}
+		}
+	}
+	/** ============ new-arribvals ============**/
+	.product-group{
+		.product{
+			.product-name{
+				font-size:$small-text-font-size;
+			}
+			.price{
+				font-size:$medium-text-font-size;
+			}
+		}
+	}
+	/** =========== special - menu ============= **/
+	.list{
+		.item{
+			.content-area{
+				.product-title{
+					font-size:$small-title-font-size; 
+				}
+				p{
+					font-size:$medium-text-font-size;
+				}
+			}
+		}
+	} 
+	#banner-1{
+		.content{
+			.title-1{
+				font-size:$medium-title-font-size;
+			}
+			.title-2{
+				font-size:$small-title-font-size;
+			}
+			.text{
+				font-size: $medium-text-font-size;
+			}
+			.art-btn{
+				font-size: $medium-text-font-size;
+			}
+		}
+	}
+	/** ========= POSTS-AREA ======== **/
+	.post{
+		.title-link{
+			.post-title{
+				font-size:1.2rem;
+			}
+		}
+	}	
+}
+@media screen and (max-width: 966px){
+	#main{
+		margin-top:$header-height;
+		.sub-title{
+			font-size:$small-text-font-size;
+			width:60%;
+		}
+	}
+	/** ========= BANNER =========== **/
+	.carousel-item{
+		.box{
+			top:20%;
+			.bn-sub-title{
+				font-weight:500;
+				font-size:$small-text-font-size;
+				&:nth-of-type(2){
+					font-size: 1.2rem;
+					letter-spacing: 4px;
+					font-weight: 500;	
+				}
+			}
+			.btn-link{
+				font-size:$less-text-font-size;
+			}
+		}
+		> img{
+			object-fit:contain;
+		}
+	}
+	/** ========== gallery ============ **/
+	#grid {
+		.grid-item{ 
+			.content {
+				width:85%;
+				.title-2{
+					font-size:1.3rem;
+				}
+			}
+		}
+	}
+	/** ========= category =========== **/
+	#category{
+		.card-group{
+			.card{
+				.title{
+					font-size: 1rem;			
+				}
+				.text{
+					font-size: .9rem;
+				}
+				.animate{
+					width:100%;
+				}
+			}
+		}
+	}
+	/** ============ new-arribvals ============**/
+	#new-arrivals{
+		.btn-prev-desktop,.btn-next-desktop{	
+			display:none;	
+			margin:0 .5rem;
+		}
+		.buttons{
+			display:flex;
+			justify-content: center;
+			margin-top:2rem;
+		}
+		.btn-prev-mobile,.btn-next-mobile{
+			margin:0 .6rem;
+		}
+	}
+	.product-group{
+		width:200%;
+		.product{
+			width:calc((100% / 3) - 1.6rem);
+		}
+	}
+	/** =========== introduction =========== **/
+	#content-wrapper{
+		flex-direction: column;
+		#article,#image{
+			width:100%;
+		}
+		#article{
+			.title{
+				font-size:1.4rem;
+			}
+			.content,.btn-link{
+				font-size:$small-text-font-size;
+			}
+		}
+		#image a{
+			margin-top:1.5rem;
+			img{
+				width:85%;
+			}
+		}
+		.content,.btn-link{
+			font-size:$small-text-font-size;
+		}
+	}
+	/** =========== special - menu ============= **/
+	.list{
+		.item{
+			.content-area{
+				p{
+					font-size:$less-text-font-size;
+				}
+				.price{
+					font-size:$medium-text-font-size
+				}
+			}
+		}
+	} 
+	/** ============ ABOUT - US ============= **/
+	#slider-area{
+		width: 60%;
+		justify-content: space-around;
+		margin: 0 auto;
+		#slider{
+			.slide-item{
+				.content{		
+					color:#ababab;			
+					font-size: $small-text-font-size;
+					line-height: 2rem;
+					height:130px;
+					width:100%;
+					overflow:hidden;
+				}
+				img{
+					margin-top:0;
+				}
+			}
+		}
+		.btn-next{
+			transform: translateY(25px);
+		}
+	}
+	/** ============ ABOUT - MARKET ========= **/
+	#content-left{
+		.art-btn{
+			font-size:$small-text-font-size;
+		}
+	}
+	#content-right{
+		.item{
+			padding: 1rem .5rem;
+			.product-title{
+				font-size:$less-title-font-size;
+			}
+			.text{
+				font-size:$small-text-font-size;
+			}
+		}
+	}
+	/** ========== Banner - 1 ============ **/
+	#banner-1 .content .art-btn {
+		font-size: $small-text-font-size;
+	}
+	/** ========= POSTS-AREA ======== **/
+	#posts-area{
+		.art-btn{
+			font-size:$small-text-font-size;
+		}
+	}
+	.post{
+		.title-link{
+			.post-title{
+				font-size:1rem;
+			}
+		}
+		.created-at,.comment,.text{
+			font-size: $small-text-font-size;
+		}
+	}	
+
+}
+@media screen and (max-width: 768px){
+	#main{
+		margin-top:$header-height-mb;
+		.title{
+			font-size:$medium-title-font-size;
+		}
+	}
+	/*=========== Banner ========== **/
+	#carousel{
+		.carousel-item{
+			img{
+				height:auto;
+				&:nth-of-type(1){
+					display:none;
+				}
+				&:nth-of-type(2){
+					display:block;
+				}
+			}
+			.box{
+				top: 50%;
+				transform: translateY(-50%);
+				left: 5rem;
+				right: 5rem;
+				padding:1.5rem 2rem;
+			}
+		}
+	}
+	/** =========== gallery ============= **/
+	#grid{
+		grid-template-columns: auto;
+		.grid-item{
+			grid-column-start:unset!important;
+			grid-column-end:unset!important;
+			grid-row-start:unset!important;
+			grid-row-end:unset!important;
+			.content{
+				bottom:2.5rem;
+				.title-2{
+					font-size:1.7rem;
+				}
+			}
+		}
+	}
+	/** ========= category =========== **/
+	#category{
+		.card-group{
+			flex-wrap: wrap;
+			.card{
+				width:50%;
+				padding:0 1.5rem;
+				margin:0.5rem 0;
+			}
+		}
+	}
+	/** ============ new-arribvals ============**/
+	.product-group{
+		width:300%;
+		.product{
+			width:calc(50% - 1.6rem);
+		}
+	}
+	/** =========== special - menu ============= **/
+	.list{
+		.item{
+			width:100%;
+			.image-area{
+				width:100px;
+			}
+			.content-area{
+				width:100%;
+				padding-left:1rem;
+			}
+		}
+	} 
+	/** ============ ABOUT - MARKET ========= **/
+	#content-left,#content-right{
+		width:100%;
+	}
+	/** ========= POSTS-AREA ======== **/
+	#wrapper-post{
+		flex-wrap:wrap;
+		.post{
+			width:100%;
+			margin-top:1.5rem;
+		}
+	}
+	/** ========== Banner - 1  ============ **/
+	#banner-1{
+		.content{
+			.text{
+				font-size:1rem;
+			}
+		}
+	}
+}
+@media screen and (max-width: 567px){
+	#main{
+		.container{
+			width:90%;
+		}
+		.sub-title{
+			width:100%;
+		}
+	}
+	/** ============= BANNER ============== **/
+	#carousel{ 
+		.carousel-item{
+			.box {
+				left:4rem;
+				right:4rem;
+				padding:1rem 0;
+			}
+		}
+	}
+	/** =========== gallery =========== **/
+	#grid{
+		.grid-item{
+			.content{
+				bottom: 1.5rem;
+				.title-1{
+					font-size:.8rem;
+				}
+				.title-2{
+					font-size:1.5rem;
+					margin: 0.5rem 0 1.5rem 0;
+				}
+			}
+		}
+	}
+	/** ========= category =========== **/
+	#category{
+		.card-group{
+			.card{
+				width:100%;
+			}
+		}
+	}
+	/** ============ new-arribvals ============**/
+	.product-group{
+		width:600%;
+		.product{
+			width:calc(100% - 1.6rem);
+			.clock-image{
+				text-align:center;
+				img{
+					width:80%;
+					&:nth-of-type(1){
+						left:50%;
+						transform:translateX(-50%);
+					}
+				}
+			}
+			&:hover img:nth-of-type(1){
+				left:-100%;
+			}
+		}
+	}
+	/** ============ ABOUT - US ========== **/
+	#slider-area{
+		width:85%;
+	}
+	/** ============ ABOUT - MARKET ========= **/
+	#content-right{
+		.item{
+			width:100%;
+		}
+	}
+	/** ========== INTRODUCTION =========== **/
+	#content-wrapper{
+		#image{
+			a{
+				padding:2rem 0;
+				text-align:center;
+				margin-top:0;
+				img{
+					width:90%;
+					height:90%;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 400px){
+	/** ============= BANNER ============== **/
+	#carousel{ 
+		.carousel-item{
+			.box {
+				left:2rem;
+				right:2rem;
+			}
+		}
+	}
+}
